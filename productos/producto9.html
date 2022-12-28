@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Utilizando BEM -->
+    <header class="header"> <!-- La clase header es mi bloque-->
+        <a href="../index.html">
+            <!-- la clase header__logo es un elemento -->
+            <img class="header__logo" src="../img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <!-- La clase navegacion__enlace--activo es el modificador -->
+        <a class="navegacion__enlace navegacion__enlace--activo" href="../index.html">Tienda</a>
+        <a class="navegacion__enlace" href="../nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Bulma</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="../img/9.jpg" alt="Imagen del producto">
+        
+
+            <div class="camisa__contenido">
+                <p>
+                    Etiam in purus nisi. Integer molestie finibus ipsum sit amet vulputate. Duis libero turpis, convallis id lectus vitae, suscipit convallis risus.
+                </p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar talla--</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div> <!-- .camisa__contenido-->
+        </div> <!-- .camisa -->
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">FrontEnd Store - &copy; Todos los derechos reservados 2022.</p>
+    </footer>
+
+</body>
+</html>
